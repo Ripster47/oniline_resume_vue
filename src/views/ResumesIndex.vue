@@ -2,11 +2,11 @@
   <div class="resumes-index">
   <div class="sidenav">
     <div>
-      <h3 class="text-center">A C T U A L I Z E</h3>
+      <h3>A C T U A L I Z E</h3>
     </div>
     <div>
-      <h6 class="text-center">Start Date: December 1, 2019</h6>
-      <h6 class="text-center">End Date: March 29, 2019</h6>
+      <h6> Start Date: December 1, 2019</h6>
+      <h6> End Date: March 29, 2019</h6>
     </div>
     <div>
       <h4>Summary</h4>
