@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import ResumeIndex from './views/ResumeIndex.vue'
-import ResumeShow from './views/ResumeShow.vue'
+import ResumesIndex from './views/ResumesIndex.vue'
+import ResumesShow from './views/ResumesShow.vue'
 
 Vue.use(Router)
 
@@ -9,7 +9,8 @@ export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
-          { path: '/', name: 'resume-index', component: ResumeIndex },
-          { path: '/show', name: 'resume-show', component: ResumeShow },
+          { path: '/', name: 'resumes-index', component: ResumesIndex },
+          { path: '/home', name: 'resumes-index', component: ResumesIndex },
+          { path: '/show', name: 'resumes-show', component: ResumesShow },
           ]
 })

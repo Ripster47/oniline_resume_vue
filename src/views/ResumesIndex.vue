@@ -1,12 +1,15 @@
 <template>
-  <div class="resume-index">
+  <div class="resumes-index">
     <h1> Meet Our Class </h1>
 
     <div class="card-deck">
       <div class="col-md-4" v-for="student in students">
         <div class="card mt-3">
+          <router-link v-bind:to="'/resumes/' + student.id">
+            <img v-bind:src="student.image_url" v-bind:alt="student.name">
+          </router-link>
           <h3 class="card-title mt-2"> {{ student.first_name }} {{ student.last_name }}</h3>
-          <p class="card-text mb-2"> {{student.capstone.description}} </p>
+          <p class="card-text mb-2"> Capstone {{student.capstone.description}} </p>
         </div>
       </div>
     </div>
