@@ -15,6 +15,17 @@
     </div>
     <div>
       <p>While the particular languages and frameworks we use to teach are those that we feel are best suited towards teaching, they also happen to be very popular in the industry today. They include Ruby, Rails, JavaScript, VueJS, HTML, CSS, SQL, and Git. You’ll learn back end development by utilizing and creating APIs, delving into database design, and working with Ruby on Rails. You’ll learn front-end development using JavaScript and VueJS, a powerful JavaScript framework.</p>
+</div>
+  <div class="resume-index">
+    <h1> Meet Our Class </h1>
+
+    <div class="card-deck">
+      <div class="col-md-4" v-for="student in students">
+        <div class="card mt-3">
+          <h3 class="card-title mt-2"> {{ student.first_name }} {{ student.last_name }}</h3>
+          <p class="card-text mb-2"> {{student.capstone.description}} </p>
+        </div>
+      </div>
     </div>
   </div>
   </div>
@@ -51,6 +62,7 @@
 </style>
 
 <script>
+  var axios = require("axios");
 export default {
   data: function() {
     return {
@@ -116,7 +128,8 @@ export default {
     //                 github_url: "www.githuburl.com",
     //                 photo: "picture"
     //                 }
-    this.students =   [
+    this.students =   
+                    [
                       {
                         student_id: 1,
                         first_name: "Phuoc",
@@ -184,7 +197,7 @@ export default {
                                          end_date: "",
                                          job_title: "",
                                          company_name: "",
-                                         details: ""
+                                         details: "CAPPA CAPPA CAPPA "
                                        }
                         ],
                         education:[
@@ -207,11 +220,11 @@ export default {
                                     {
                                       // student_id: #,
                                       name: "",
-                                      description: "",
+                                      description: "STUFF ",
                                       url: ""
                                     }
                       }
-                      ]
+                    ]
   },
   methods: {}
 };
