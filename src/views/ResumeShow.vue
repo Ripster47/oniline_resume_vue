@@ -26,22 +26,58 @@ export default {
             resume_url: "",
             github_url: "",
             photo: "" 
-            };
+            }
   },
   created: function() {
-    this.student = {
-                    first_name: "Herman",
-                    last_name: "Munster",
-                    email: "bossmunster@gmail.com",
-                    phone_number: "18003456789",
-                    bio: "I am a monster, who somehow still has a happy family",
-                    linkedin_url: "www.linkedinurl.com",
-                    twitter_handle: "BossMunster",
-                    website_url: "www.websiteurl.com",
-                    resume_url: "www.resumeurl.com",
-                    github_url: "www.githuburl.com",
-                    photo: "picture"
-                    }
+    this.student = [
+                      {
+                        // student_id: #,
+                        first_name: "",
+                        last_name: "",
+                        email: "",
+                        phone_number: "",
+                        short_bio: "",
+                        linkedin_url: "",
+                        twitter_handle: "",
+                        personal_blog: "",
+                        online_resume_url: "",
+                        github_url: "",
+                        photo: "",
+                        experience: [
+                                       {
+                                         // student_id: #,
+                                         start_date: "",
+                                         end_date: "",
+                                         job_title: "",
+                                         company_name: "",
+                                         details: ""
+                                       }
+                        ],
+                        education:[
+                                    {
+                                      // student_id: #,
+                                      start_date: "",
+                                      end_date: "",
+                                      degree: "",
+                                      university_name: "",
+                                      details: ""
+                                    }
+                        ],
+                        skills: [
+                                    {
+                                      // student_id: #,
+                                      skill: ""
+                                    }
+                        ],
+                        capstone:
+                                    {
+                                      // student_id: #,
+                                      name: "",
+                                      description: "",
+                                      url: ""
+                                    }
+                      }
+                    ]
   },
   methods: {}
 };
