@@ -10,8 +10,7 @@
   </div>
       <div class="container">
         <div class="row">
-
-          <div class="left-column col-4">
+          <div class="left-column col-sm-4">
             <h2 class="pt-5"></h2>
             <h2 class="text-right pt-5 font-weight-bold">Skills</h2>
             <div>
@@ -47,7 +46,7 @@
             </div>
           </div>
 
-          <div class="col-8 bg-light">
+          <div class="col-sm-8 bg-light">
             <h2 class="text-left pt-5 font-weight-bold">Bio</h2>
             <div>
               <h6 class = "text-left">{{student[0].short_bio}}</h6>
