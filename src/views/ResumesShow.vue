@@ -1,5 +1,5 @@
 <template>
-  <div class="resume-show bg-white">
+  <div class="resumes-show bg-white">
     <div class="heading text-center"> 
     <h1>{{ student[0].first_name}} {{ student[0].last_name }}</h1>
     <div>
@@ -8,7 +8,7 @@
       <h6>{{ student[0].github_url }}</h6>
     </div>
   </div>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="left-column col-sm-4">
             <h2 class="pt-5"></h2>
@@ -45,7 +45,6 @@
               <h6 class="text-right">{{student[0].capstone[0].url}}</h6>
             </div>
           </div>
-
           <div class="col-sm-8 bg-light">
             <h2 class="text-left pt-5 font-weight-bold">Bio</h2>
             <div>
