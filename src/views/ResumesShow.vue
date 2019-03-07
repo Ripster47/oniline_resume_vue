@@ -10,8 +10,7 @@
   </div>
       <div class="container-fluid">
         <div class="row">
-
-          <div class="left-column col-sm-4 col-md-4 col-lg-4">
+          <div class="left-column col-sm-4">
             <h2 class="pt-5"></h2>
             <h2 class="text-right pt-5 font-weight-bold">Skills</h2>
             <div>
@@ -46,8 +45,7 @@
               <h6 class="text-right">{{student[0].capstone[0].url}}</h6>
             </div>
           </div>
-
-          <div class="col-sm-8 col-md-8 col-lg-8 bg-light">
+          <div class="col-sm-8 bg-light">
             <h2 class="text-left pt-5 font-weight-bold">Bio</h2>
             <div>
               <h6 class = "text-left">{{student[0].short_bio}}</h6>
