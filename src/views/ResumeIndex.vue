@@ -1,4 +1,21 @@
 <template>
+  <div class="resume-index"> 
+  <div class="sidenav">
+    <div>
+      <h3>A C T U A L I Z E</h3>
+    </div>
+    <div>
+      <h6>Start Date: December 1, 2019</h6>
+      <h6>End Date: March 29, 2019</h6>
+    </div>
+    <div>
+    </div>
+    <div>
+      <h4>Summary</h4>
+    </div>
+    <div>
+      <p>While the particular languages and frameworks we use to teach are those that we feel are best suited towards teaching, they also happen to be very popular in the industry today. They include Ruby, Rails, JavaScript, VueJS, HTML, CSS, SQL, and Git. You’ll learn back end development by utilizing and creating APIs, delving into database design, and working with Ruby on Rails. You’ll learn front-end development using JavaScript and VueJS, a powerful JavaScript framework.</p>
+</div>
   <div class="resume-index">
     <h1> Meet Our Class </h1>
 
@@ -11,9 +28,37 @@
       </div>
     </div>
   </div>
+  </div>
+
+
+
 </template>
 
 <style>
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #48A5BC;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav div p {
+  padding: 10px;
+}
+
+.sidenav div h3 {
+  padding: 10px ;
+}
+
+.sidenav div h4 {
+  padding:20px ;
+}
+
 </style>
 
 <script>
@@ -70,6 +115,19 @@ export default {
       }
     },
   created: function() {
+    // this.student = {
+    //                 first_name: "Herman",
+    //                 last_name: "Munster",
+    //                 email: "bossmunster@gmail.com",
+    //                 phone_number: "18003456789",
+    //                 bio: "I am a monster, who somehow still has a happy family",
+    //                 linkedin_url: "www.linkedinurl.com",
+    //                 twitter_handle: "BossMunster",
+    //                 website_url: "www.websiteurl.com",
+    //                 resume_url: "www.resumeurl.com",
+    //                 github_url: "www.githuburl.com",
+    //                 photo: "picture"
+    //                 }
     this.students =   
                     [
                       {
