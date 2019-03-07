@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div id="nav" class="link-bar text-center">
+    <div id="nav" class="heading text-center">
       <router-link class="text-light" to="/">All Resumes</router-link>
     </div>
     <router-view/>
