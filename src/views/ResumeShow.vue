@@ -1,5 +1,6 @@
 <template>
-  <div class="resume-show">
+  <div class="resume-show bg-white">
+    <div class="heading text-center"> 
     <h1>{{ student[0].first_name}} {{ student[0].last_name }}</h1>
     <div>
       <h6>{{ student[0].email }}</h6>
@@ -9,35 +10,35 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-4 bg-info">
+          <div class="left-column col-4">
             <h2 class="pt-5"></h2>
-            <h2 class="text-right pt-5">Skills</h2>
+            <h2 class="text-right pt-5 font-weight-bold">Skills</h2>
             <div>
               <h6 class="text-right">{{student[0].skills[0].skill}}</h6>
             </div>
             <div class="pb-5"></div>
             <div class="pb-5"></div>
-            <h2 class="text-right">Experience</h2>
+            <h2 class="text-right font-weight-bold">Experiences</h2>
             <div>
-              <h6 class="text-right">{{student[0].experience[0].start_date}}</h6>
-              <h6 class="text-right">{{student[0].experience[0].end_date}}</h6>
-              <h6 class="text-right">{{student[0].experience[0].job_title}}</h6>
-              <h6 class="text-right">{{student[0].experience[0].company_name}}</h6>
-              <h6 class="text-right">{{student[0].experience[0].details}}</h6>
+              <h6 class="text-right">{{student[0].experiences[0].start_date}}</h6>
+              <h6 class="text-right">{{student[0].experiences[0].end_date}}</h6>
+              <h6 class="text-right">{{student[0].experiences[0].job_title}}</h6>
+              <h6 class="text-right">{{student[0].experiences[0].company_name}}</h6>
+              <h6 class="text-right">{{student[0].experiences[0].details}}</h6>
             </div>
             <div class="pb-5"></div>
             <div class="pb-5"></div>
-            <h2 class="text-right">Education</h2>
+            <h2 class="text-right font-weight-bold">Educations</h2>
             <div>
-              <h6 class="text-right">{{student[0].education[0].start_date}}</h6>
-              <h6 class="text-right">{{student[0].education[0].end_date}}</h6>
-              <h6 class="text-right">{{student[0].education[0].degree}}</h6>
-              <h6 class="text-right">{{student[0].education[0].university_name}}</h6>
-              <h6 class="text-right">{{student[0].education[0].details}}</h6>
+              <h6 class="text-right">{{student[0].educations[0].start_date}}</h6>
+              <h6 class="text-right">{{student[0].educations[0].end_date}}</h6>
+              <h6 class="text-right">{{student[0].educations[0].degree}}</h6>
+              <h6 class="text-right">{{student[0].educations[0].university_name}}</h6>
+              <h6 class="text-right">{{student[0].educations[0].details}}</h6>
             </div>
             <div class="pb-5"></div>
             <div class="pb-5"></div>
-            <h2 class="text-right">Capstone</h2>
+            <h2 class="text-right font-weight-bold">Capstone</h2>
             <div>
               <h6 class="text-right">{{student[0].capstone[0].name}}</h6>
               <h6 class="text-right">{{student[0].capstone[0].description}}</h6>
@@ -45,7 +46,7 @@
             </div>
           </div>
 
-          <div class="col-8 bg-secondary">
+          <div class="col-8 bg-light">
             One of three columns
             <h1 class="text-left pt-5">Bio</h1>
             <div>
@@ -68,9 +69,6 @@
               <h6 class = "text-left">{{student[0].skills[0].skill}}</h6>
             </div>
           </div>
-
-
-
         </div>
       </div>
     </div>
@@ -124,7 +122,7 @@ export default {
                       "online_resume_url": "www.onlineresumeurl.com",
                       "github_url": "www.githuburl.com",
                       "photo": "https://i.ebayimg.com/images/g/wd8AAOxy4kpQ~uGQ/s-l300.jpg",
-                      "experience": [
+                      "experiences": [
                                      {
                                        "student_id": "#",
                                        "start_date": "01/02/03",
@@ -134,7 +132,7 @@ export default {
                                        "details": "Real good at driving"
                                      }
                       ],
-                      "education":[
+                      "educations":[
                                   {
                                     "student_id": "#",
                                     "start_date": "12/31/02",
