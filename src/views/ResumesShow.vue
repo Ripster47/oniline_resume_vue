@@ -8,7 +8,7 @@
       <h6>{{ student[0].github_url }}</h6>
     </div>
   </div>
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
           <div class="left-column col-sm-4">
             <h2 class="pt-5"></h2>
