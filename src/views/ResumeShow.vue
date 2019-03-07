@@ -7,6 +7,7 @@
       <h6>{{ student[0].phone_number }}</h6>
       <h6>{{ student[0].github_url }}</h6>
     </div>
+  </div>
       <div class="container">
         <div class="row">
 
@@ -47,24 +48,23 @@
           </div>
 
           <div class="col-8 bg-light">
-            One of three columns
-            <h1 class="text-left pt-5">Bio</h1>
+            <h2 class="text-left pt-5 font-weight-bold">Bio</h2>
             <div>
               <h6 class = "text-left">{{student[0].short_bio}}</h6>
             </div>
             <div class="pb-5"></div>
             <div class="pb-5"></div>
-            <h1 class="text-left">Experience</h1>
+            <h2 class="text-left font-weight-bold">Experience</h2>
             <div>
-              <h6 class = "text-left">{{student[0].experience[0].start_date}}</h6>
-              <h6 class = "text-left">{{student[0].experience[0].end_date}}</h6>
-              <h6 class = "text-left">{{student[0].experience[0].job_title}}</h6>
-              <h6 class = "text-left">{{student[0].experience[0].company_name}}</h6>
-              <h6 class = "text-left">{{student[0].experience[0].details}}</h6>
+              <h6 class = "text-left">{{student[0].experiences[0].start_date}}</h6>
+              <h6 class = "text-left">{{student[0].experiences[0].end_date}}</h6>
+              <h6 class = "text-left">{{student[0].experiences[0].job_title}}</h6>
+              <h6 class = "text-left">{{student[0].experiences[0].company_name}}</h6>
+              <h6 class = "text-left">{{student[0].experiences[0].details}}</h6>
             </div>
             <div class="pb-5"></div>
             <div class="pb-5"></div>
-            <h1 class="text-left">Skills</h1>
+            <h2 class="text-left font-weight-bold">Skills</h2>
             <div>
               <h6 class = "text-left">{{student[0].skills[0].skill}}</h6>
             </div>
@@ -72,6 +72,7 @@
         </div>
       </div>
     </div>
+  </div>
 </template>
 
 <style>
