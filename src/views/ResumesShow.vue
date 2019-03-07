@@ -1,71 +1,69 @@
 <template>
   <div class="resumes-show bg-white">
-    <div class="heading text-center"> 
-    <h1>{{ student[0].first_name}} {{ student[0].last_name }}</h1>
-    <div>
-      <h6>{{ student[0].email }}</h6>
-      <h6>{{ student[0].phone_number }}</h6>
-      <h6>{{ student[0].github_url }}</h6>
+    <div class="heading row"> 
+      <h1 class="text-center col-12">{{ student[0].first_name}} {{ student[0].last_name }}</h1>
+      <div class="col-12">
+        <h6 class="text-center">{{ student[0].email }}</h6>
+        <h6 class="text-center">{{ student[0].phone_number }}</h6>
+        <h6 class="text-center">{{ student[0].github_url }}</h6>
+      </div>
     </div>
-  </div>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="left-column col-sm-4">
-            <h2 class="pt-5"></h2>
-            <h2 class="text-right pt-5 font-weight-bold">Skills</h2>
-            <div>
-              <h6 class="text-right">{{student[0].skills[0].skill}}</h6>
-            </div>
-            <div class="pb-5"></div>
-            <div class="pb-5"></div>
-            <h2 class="text-right font-weight-bold">Experiences</h2>
-            <div>
-              <h6 class="text-right">{{student[0].experiences[0].start_date}}</h6>
-              <h6 class="text-right">{{student[0].experiences[0].end_date}}</h6>
-              <h6 class="text-right">{{student[0].experiences[0].job_title}}</h6>
-              <h6 class="text-right">{{student[0].experiences[0].company_name}}</h6>
-              <h6 class="text-right">{{student[0].experiences[0].details}}</h6>
-            </div>
-            <div class="pb-5"></div>
-            <div class="pb-5"></div>
-            <h2 class="text-right font-weight-bold">Educations</h2>
-            <div>
-              <h6 class="text-right">{{student[0].educations[0].start_date}}</h6>
-              <h6 class="text-right">{{student[0].educations[0].end_date}}</h6>
-              <h6 class="text-right">{{student[0].educations[0].degree}}</h6>
-              <h6 class="text-right">{{student[0].educations[0].university_name}}</h6>
-              <h6 class="text-right">{{student[0].educations[0].details}}</h6>
-            </div>
-            <div class="pb-5"></div>
-            <div class="pb-5"></div>
-            <h2 class="text-right font-weight-bold">Capstone</h2>
-            <div>
-              <h6 class="text-right">{{student[0].capstone[0].name}}</h6>
-              <h6 class="text-right">{{student[0].capstone[0].description}}</h6>
-              <h6 class="text-right">{{student[0].capstone[0].url}}</h6>
-            </div>
+      <div class="row">
+        <div class="left-column col-sm-4">
+          <h2 class="pt-5"></h2>
+          <h2 class="text-right pt-5 font-weight-bold">Skills</h2>
+          <div>
+            <h6 class="text-right">{{student[0].skills[0].skill}}</h6>
           </div>
-          <div class="col-sm-8 bg-light">
-            <h2 class="text-left pt-5 font-weight-bold">Bio</h2>
-            <div>
-              <h6 class = "text-left">{{student[0].short_bio}}</h6>
-            </div>
-            <div class="pb-5"></div>
-            <div class="pb-5"></div>
-            <h2 class="text-left font-weight-bold">Experience</h2>
-            <div>
-              <h6 class = "text-left">{{student[0].experiences[0].start_date}}</h6>
-              <h6 class = "text-left">{{student[0].experiences[0].end_date}}</h6>
-              <h6 class = "text-left">{{student[0].experiences[0].job_title}}</h6>
-              <h6 class = "text-left">{{student[0].experiences[0].company_name}}</h6>
-              <h6 class = "text-left">{{student[0].experiences[0].details}}</h6>
-            </div>
-            <div class="pb-5"></div>
-            <div class="pb-5"></div>
-            <h2 class="text-left font-weight-bold">Skills</h2>
-            <div>
-              <h6 class = "text-left">{{student[0].skills[0].skill}}</h6>
-            </div>
+          <div class="pb-5"></div>
+          <div class="pb-5"></div>
+          <h2 class="text-right font-weight-bold">Experiences</h2>
+          <div>
+            <h6 class="text-right">{{student[0].experiences[0].start_date}}</h6>
+            <h6 class="text-right">{{student[0].experiences[0].end_date}}</h6>
+            <h6 class="text-right">{{student[0].experiences[0].job_title}}</h6>
+            <h6 class="text-right">{{student[0].experiences[0].company_name}}</h6>
+            <h6 class="text-right">{{student[0].experiences[0].details}}</h6>
+          </div>
+          <div class="pb-5"></div>
+          <div class="pb-5"></div>
+          <h2 class="text-right font-weight-bold">Educations</h2>
+          <div>
+            <h6 class="text-right">{{student[0].educations[0].start_date}}</h6>
+            <h6 class="text-right">{{student[0].educations[0].end_date}}</h6>
+            <h6 class="text-right">{{student[0].educations[0].degree}}</h6>
+            <h6 class="text-right">{{student[0].educations[0].university_name}}</h6>
+            <h6 class="text-right">{{student[0].educations[0].details}}</h6>
+          </div>
+          <div class="pb-5"></div>
+          <div class="pb-5"></div>
+          <h2 class="text-right font-weight-bold">Capstone</h2>
+          <div>
+            <h6 class="text-right">{{student[0].capstone[0].name}}</h6>
+            <h6 class="text-right">{{student[0].capstone[0].description}}</h6>
+            <h6 class="text-right">{{student[0].capstone[0].url}}</h6>
+          </div>
+        </div>
+        <div class="col-sm-8 bg-light">
+          <h2 class="text-left pt-5 font-weight-bold">Bio</h2>
+          <div>
+            <h6 class = "text-left">{{student[0].short_bio}}</h6>
+          </div>
+          <div class="pb-5"></div>
+          <div class="pb-5"></div>
+          <h2 class="text-left font-weight-bold">Experience</h2>
+          <div>
+            <h6 class = "text-left">{{student[0].experiences[0].start_date}}</h6>
+            <h6 class = "text-left">{{student[0].experiences[0].end_date}}</h6>
+            <h6 class = "text-left">{{student[0].experiences[0].job_title}}</h6>
+            <h6 class = "text-left">{{student[0].experiences[0].company_name}}</h6>
+            <h6 class = "text-left">{{student[0].experiences[0].details}}</h6>
+          </div>
+          <div class="pb-5"></div>
+          <div class="pb-5"></div>
+          <h2 class="text-left font-weight-bold">Skills</h2>
+          <div>
+            <h6 class = "text-left">{{student[0].skills[0].skill}}</h6>
           </div>
         </div>
       </div>
