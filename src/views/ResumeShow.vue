@@ -1,11 +1,54 @@
 <template>
   <div class="resume-show">
-    <h1>{{ student.first_name}} {{ student.last_name }}</h1>
+    <h1>{{ student[0].first_name}} {{ student[0].last_name }}</h1>
     <div>
-      <h6>{{ student.email }}</h6>
+      <h6>{{ student[0].experience[0].company_name }}</h6>
     </div>
-    <p></p>
-  </div>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-4 bg-info">
+            <h2 class="pt-5"></h2>
+            <h2 class="text-right pt-5">Skills</h2>
+            <div>
+              <h6 class="text-right">{{student[0].skills[0].skill}}</h6>
+            </div>
+            <div class="pb-5"></div>
+            <div class="pb-5"></div>
+            <h2 class="text-right">Experience</h2>
+            <div>
+              <h6 class="text-right">{{student[0].experience[0].start_date}}</h6>
+              <h6 class="text-right">{{student[0].experience[0].end_date}}</h6>
+              <h6 class="text-right">{{student[0].experience[0].job_title}}</h6>
+              <h6 class="text-right">{{student[0].experience[0].company_name}}</h6>
+              <h6 class="text-right">{{student[0].experience[0].details}}</h6>
+            </div>
+            <div class="pb-5"></div>
+            <div class="pb-5"></div>
+            <h2 class="text-right">Education</h2>
+            <div>
+              <h6 class="text-right">{{student[0].education[0].start_date}}</h6>
+              <h6 class="text-right">{{student[0].education[0].end_date}}</h6>
+              <h6 class="text-right">{{student[0].education[0].degree}}</h6>
+              <h6 class="text-right">{{student[0].education[0].university_name}}</h6>
+              <h6 class="text-right">{{student[0].education[0].details}}</h6>
+            </div>
+            <div class="pb-5"></div>
+            <div class="pb-5"></div>
+            <h2 class="text-right">Capstone</h2>
+            <div>
+              <h6 class="text-right">{{student[0].capstone[0].name}}</h6>
+              <h6 class="text-right">{{student[0].capstone[0].description}}</h6>
+              <h6 class="text-right">{{student[0].capstone[0].url}}</h6>
+            </div>
+          </div>
+
+          <div class="col-8 bg-secondary">
+            One of three columns
+          </div>
+        </div>
+      </div>
+    </div>
 </template>
 
 <style>
@@ -15,33 +58,81 @@
 export default {
   data: function() {
     return {
+            student_id: 0,
             first_name: "",
             last_name: "",
             email: "",
             phone_number: "",
-            bio: "",
+            short_bio: "",
             linkedin_url: "",
             twitter_handle: "",
-            website_url: "",
-            resume_url: "",
+            personal_blog: "",
+            online_resume_url: "",
             github_url: "",
-            photo: "" 
+            photo: "",
+            start_date: "",
+            end_date: "",
+            job_title: "",
+            company_name: "",
+            details: "",
+            start_date: "",
+            end_date: "",
+            degree: "",
+            university_name: "",
+            skill: "",
+            name: "",
+            description: "",
+            url: ""
             };
   },
   created: function() {
-    this.student = {
-                    first_name: "Herman",
-                    last_name: "Munster",
-                    email: "bossmunster@gmail.com",
-                    phone_number: "18003456789",
-                    bio: "I am a monster, who somehow still has a happy family",
-                    linkedin_url: "www.linkedinurl.com",
-                    twitter_handle: "BossMunster",
-                    website_url: "www.websiteurl.com",
-                    resume_url: "www.resumeurl.com",
-                    github_url: "www.githuburl.com",
-                    photo: "picture"
-                    }
+    this.student = [{
+                      "student_id": "#",
+                      "first_name": "Herman",
+                      "last_name": "Munster",
+                      "email": "bossmunster@gmail.com",
+                      "phone_number": "8476577890",
+                      "short_bio": "I am monster",
+                      "linkedin_url": "www.linkedinurl.com",
+                      "twitter_handle": "bossmunster",
+                      "personal_blog": "its personal",
+                      "online_resume_url": "www.onlineresumeurl.com",
+                      "github_url": "www.githuburl.com",
+                      "photo": "https://i.ebayimg.com/images/g/wd8AAOxy4kpQ~uGQ/s-l300.jpg",
+                      "experience": [
+                                     {
+                                       "student_id": "#",
+                                       "start_date": "01/02/03",
+                                       "end_date": "01/03/03",
+                                       "job_title": "driver",
+                                       "company_name": "FedEx",
+                                       "details": "Real good at driving"
+                                     }
+                      ],
+                      "education":[
+                                  {
+                                    "student_id": "#",
+                                    "start_date": "12/31/02",
+                                    "end_date": "01/01/03",
+                                    "degree": "Bachelors degree in driving",
+                                    "university_name": "UoD",
+                                    "details": "Learned to Drive"
+                                  }
+                      ],
+                      "skills": [
+                                  {
+                                    "student_id": "#",
+                                    "skill": "Can use a steering wheel, a gas pedal, sometimes a brake"
+                                  }
+                      ],
+                      "capstone":[
+                                  {
+                                    "student_id": "#",
+                                    "name": "MunsterHunter",
+                                    "description": "Use to hunt Munsters",
+                                    "url": "www.url.com"
+                                  }]
+                    }]
   },
   methods: {}
 };
