@@ -2,7 +2,9 @@
   <div class="resume-show">
     <h1>{{ student[0].first_name}} {{ student[0].last_name }}</h1>
     <div>
-      <h6>{{ student[0].experience[0].company_name }}</h6>
+      <h6>{{ student[0].email }}</h6>
+      <h6>{{ student[0].phone_number }}</h6>
+      <h6>{{ student[0].github_url }}</h6>
     </div>
       <div class="container">
         <div class="row">
@@ -45,7 +47,30 @@
 
           <div class="col-8 bg-secondary">
             One of three columns
+            <h1 class="text-left pt-5">Bio</h1>
+            <div>
+              <h6 class = "text-left">{{student[0].short_bio}}</h6>
+            </div>
+            <div class="pb-5"></div>
+            <div class="pb-5"></div>
+            <h1 class="text-left">Experience</h1>
+            <div>
+              <h6 class = "text-left">{{student[0].experience[0].start_date}}</h6>
+              <h6 class = "text-left">{{student[0].experience[0].end_date}}</h6>
+              <h6 class = "text-left">{{student[0].experience[0].job_title}}</h6>
+              <h6 class = "text-left">{{student[0].experience[0].company_name}}</h6>
+              <h6 class = "text-left">{{student[0].experience[0].details}}</h6>
+            </div>
+            <div class="pb-5"></div>
+            <div class="pb-5"></div>
+            <h1 class="text-left">Skills</h1>
+            <div>
+              <h6 class = "text-left">{{student[0].skills[0].skill}}</h6>
+            </div>
           </div>
+
+
+
         </div>
       </div>
     </div>
@@ -92,7 +117,7 @@ export default {
                       "last_name": "Munster",
                       "email": "bossmunster@gmail.com",
                       "phone_number": "8476577890",
-                      "short_bio": "I am monster",
+                      "short_bio": "I am a former TV star, transitioning over to the coding world. I am currently attending Actualize Bootcamp in Chicago.",
                       "linkedin_url": "www.linkedinurl.com",
                       "twitter_handle": "bossmunster",
                       "personal_blog": "its personal",
@@ -104,7 +129,7 @@ export default {
                                        "student_id": "#",
                                        "start_date": "01/02/03",
                                        "end_date": "01/03/03",
-                                       "job_title": "driver",
+                                       "job_title": "Driver",
                                        "company_name": "FedEx",
                                        "details": "Real good at driving"
                                      }
@@ -122,7 +147,7 @@ export default {
                       "skills": [
                                   {
                                     "student_id": "#",
-                                    "skill": "Can use a steering wheel, a gas pedal, sometimes a brake"
+                                    "skill": "Can use a steering wheel, a gas pedal, sometimes a brake. I deliver all packages in a timely manner"
                                   }
                       ],
                       "capstone":[
