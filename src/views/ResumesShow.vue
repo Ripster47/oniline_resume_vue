@@ -78,7 +78,6 @@
 export default {
   data: function() {
     return {
-            student_id: 0,
             first_name: "",
             last_name: "",
             email: "",
@@ -107,7 +106,7 @@ export default {
   },
   created: function() {
     this.student = [{
-                      "student_id": "#",
+                      "id": 1,
                       "first_name": "Herman",
                       "last_name": "Munster",
                       "email": "bossmunster@gmail.com",

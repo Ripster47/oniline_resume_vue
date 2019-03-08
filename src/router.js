@@ -9,8 +9,8 @@ export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
-          { path: '/', name: 'resumes-index', component: ResumesIndex },
-          { path: '/home', name: 'resumes-index', component: ResumesIndex },
-          { path: '/show', name: 'resumes-show', component: ResumesShow }
+          { path: '/', name: 'home', component: ResumesIndex },
+          { path: '/developers', name: 'resumes-index', component: ResumesIndex },
+          { path: '/developers/:id', name: 'resumes-show', component: ResumesShow }
           ]
 })

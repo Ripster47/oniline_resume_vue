@@ -1,13 +1,25 @@
 .left-column{
-  background-color: #d2ddd4
+  background-color: #d2ddd4;
 }
 
 .heading{
   background-color: #34352f;
-/*  margin-left: 20.3%;
-  margin-right: 20.3%;*/
   color: white;
   padding-bottom: 10px;
+}
+
+.resumes-index .card {
+  opacity: 0.95;
+  width: ;
+}
+
+.resumes-index .card:hover {
+  box-shadow: 8px 8px 35px 3px lightgrey;
+  opacity: 1;
+}
+
+body{
+  background-image: url('light_wool.png');
 }
 
 

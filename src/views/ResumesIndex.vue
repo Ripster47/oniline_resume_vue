@@ -2,7 +2,7 @@
   <div class="resumes-index">
     <div class="container">
       <div class="row row-eq-height">
-        <div class="sidebar col-md-4 bg-info">
+        <div class="sidebar col-md-4" style="background-color: #9ee3fa">
           <div class="row">
             <h3 class=" text-center font-weight-bold col-12">A C T U A L I Z E</h3>
             <h6 class=" text-center col-12"> Start Date: December 1, 2019</h6>
@@ -17,11 +17,11 @@
 
           <div class="card-deck row">
             <div class="col-md-4" v-for="student in students">
-              <div class="card mt-3">
+              <div class="card rounded mt-3">
                 <router-link v-bind:to="'/resumes/' + student.id">
                   <img v-bind:src="student.image_url" v-bind:alt="student.name">
                 </router-link>
-                <h3 class="card-title font-weight-bold mt-2"> {{ student.first_name }} {{ student.last_name }}</h3>
+                <h3 class="card-title text-center font-weight-bold mt-2"> {{ student.first_name }} {{ student.last_name }}</h3>
                 <p class="card-text mb-2"> Capstone {{student.capstone.description}} </p>
               </div>
             </div>
@@ -45,7 +45,6 @@
 export default {
   data: function() {
     return {
-          // "student_id": #,
           students: [],
           first_name: "",
           last_name: "",
@@ -94,19 +93,20 @@ export default {
       }
     },
   created: function() {
-    // this.student = {
-    //                 first_name: "Herman",
-    //                 last_name: "Munster",
-    //                 email: "bossmunster@gmail.com",
-    //                 phone_number: "18003456789",
-    //                 bio: "I am a monster, who somehow still has a happy family",
-    //                 linkedin_url: "www.linkedinurl.com",
-    //                 twitter_handle: "BossMunster",
-    //                 website_url: "www.websiteurl.com",
-    //                 resume_url: "www.resumeurl.com",
-    //                 github_url: "www.githuburl.com",
-    //                 photo: "picture"
-    //                 }
+    this.student = {
+                    id: 1,
+                    first_name: "Herman",
+                    last_name: "Munster",
+                    email: "bossmunster@gmail.com",
+                    phone_number: "18003456789",
+                    bio: "I am a monster, who somehow still has a happy family",
+                    linkedin_url: "www.linkedinurl.com",
+                    twitter_handle: "BossMunster",
+                    website_url: "www.websiteurl.com",
+                    resume_url: "www.resumeurl.com",
+                    github_url: "www.githuburl.com",
+                    photo: "picture"
+                    }
     this.students =   
                     [
                       {
