@@ -19,11 +19,11 @@
             <div class="col-md-4" v-for="student in students">
               <div class="card mt-3">
                 <router-link v-bind:to="'/resumes/' + student.id">
-                  <img v-bind:src="student.image_url" v-bind:alt="student.name">
+                  <img v-bind:src="student.image_url" v-bind:alt="student.first_name">
                 </router-link>
-                <h3 class="card-title font-weight-bold mt-2"> {{ student.first_name }} {{ student.last_name }}</h3>
-                <p class="card-text mb-2"> Capstone {{student.capstone.description}} </p>
-              </div>
+                <h5 class="card-title text-center font-weight-bold mt-2"> {{ student.first_name }} {{ student.last_name }}</h5>
+<!--                 <p class="card-text mb-2"> Capstone {{student.capstone.description}} </p>
+ -->              </div>
             </div>
           </div>
         </div>
@@ -90,118 +90,11 @@ export default {
       }
     },
   created: function() {
-    // this.student = {
-    //                 first_name: "Herman",
-    //                 last_name: "Munster",
-    //                 email: "bossmunster@gmail.com",
-    //                 phone_number: "18003456789",
-    //                 bio: "I am a monster, who somehow still has a happy family",
-    //                 linkedin_url: "www.linkedinurl.com",
-    //                 twitter_handle: "BossMunster",
-    //                 website_url: "www.websiteurl.com",
-    //                 resume_url: "www.resumeurl.com",
-    //                 github_url: "www.githuburl.com",
-    //                 photo: "picture"
-    //                 }
-    this.students =   
-                    [
-                      {
-                        student_id: 1,
-                        first_name: "Phuoc",
-                        last_name: "Bui",
-                        email: "phuocbui@gmail.com",
-                        phone_number: "123-456-7891",
-                        short_bio: "IT'S ME",
-                        linkedin_url: "linkedin.com",
-                        twitter_handle: "pnb90",
-                        personal_blog: "",
-                        online_resume_url: "",
-                        github_url: "",
-                        photo: "",
-                        experience: [
-                                       {
-                                         // student_id: #,
-                                         start_date: "",
-                                         end_date: "",
-                                         job_title: "",
-                                         company_name: "",
-                                         details: ""
-                                       }
-                        ],
-                        education:[
-                                    {
-                                      // student_id: #,
-                                      start_date: "",
-                                      end_date: "",
-                                      degree: "",
-                                      university_name: "",
-                                      details: ""
-                                    }
-                        ],
-                        skills: [
-                                    {
-                                      // student_id: #,
-                                      skill: ""
-                                    }
-                        ],
-                        capstone:
-                                    {
-                                      // student_id: #,
-                                      name: "",
-                                      description: "",
-                                      url: ""
-                                    }
-                      },
-                      {
-                        student_id: 2,
-                        first_name: "Victoria",
-                        last_name: "Roos-Walls",
-                        email: "phuocbui@gmail.com",
-                        phone_number: "123-456-7891",
-                        short_bio: "IT'S ME",
-                        linkedin_url: "linkedin.com",
-                        twitter_handle: "pnb90",
-                        personal_blog: "",
-                        online_resume_url: "",
-                        github_url: "",
-                        photo: "",
-                        experience: [
-                                       {
-                                         // student_id: #,
-                                         start_date: "",
-                                         end_date: "",
-                                         job_title: "",
-                                         company_name: "",
-                                         details: "CAPPA CAPPA CAPPA "
-                                       }
-                        ],
-                        education:[
-                                    {
-                                      // student_id: #,
-                                      start_date: "",
-                                      end_date: "",
-                                      degree: "",
-                                      university_name: "",
-                                      details: ""
-                                    }
-                        ],
-                        skills: [
-                                    {
-                                      // student_id: #,
-                                      skill: ""
-                                    }
-                        ],
-                        capstone:
-                                    {
-                                      // student_id: #,
-                                      name: "",
-                                      description: "STUFF ",
-                                      url: ""
-                                    }
-                      },                
-                    ]},
-
-
+    axios.get("/api/students")
+    .then(response => {
+      this.students = response.data;
+    });
+  },
   methods: {}
 };
 </script>

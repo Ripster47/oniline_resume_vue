@@ -10,7 +10,7 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
           { path: '/', name: 'resumes-index', component: ResumesIndex },
-          { path: '/home', name: 'resumes-index', component: ResumesIndex },
-          { path: '/show', name: 'resumes-show', component: ResumesShow }
+          { path: '/developers', name: 'resumes-index', component: ResumesIndex },
+          { path: '/developers/:id', name: 'resumes-show', component: ResumesShow }
           ]
 })
