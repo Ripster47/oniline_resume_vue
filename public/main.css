@@ -5,9 +5,19 @@
 .heading{
   background-color: #34352f;
   color: white;
-  padding-bottom: 10px;
 }
 
+/*.heading{
+  margin-left: 20.3%;
+  margin-right: 20.3%;
+  padding-bottom: 10px;
+}*/
+/*
+.bio {
+  padding-top: 10%;
+}
+
+<<<<<<< HEAD
 .resumes-index .card {
   opacity: 0.95;
   width: ;
@@ -22,4 +32,16 @@ body{
   background-image: url('light_wool.png');
 }
 
+=======
+.skills {
+  padding-top: 5%;
+}
 
+h2.skills {
+  padding-bottom: 10%;
+}
+>>>>>>> c962e0fec62f043d60408773a5ac3754e0c74cab
+
+.educations {
+  padding-top: %;
+}
