@@ -11,6 +11,6 @@ export default new Router({
   routes: [
           { path: '/', name: 'resumes-index', component: ResumesIndex },
           { path: '/home', name: 'resumes-index', component: ResumesIndex },
-          { path: '/show', name: 'resumes-show', component: ResumesShow },
+          { path: '/show', name: 'resumes-show', component: ResumesShow }
           ]
 })

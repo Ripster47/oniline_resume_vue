@@ -61,7 +61,7 @@
           </div>
           <div class="pb-5"></div>
           <div class="pb-5"></div>
-          <h2 class="text-left font-weight-bold">Skills</h2>
+          <h2 class="text-left font-weight-bold">Talents</h2>
           <div>
             <h6 class = "text-left">{{student[0].skills[0].skill}}</h6>
           </div>
@@ -111,7 +111,7 @@ export default {
                       "first_name": "Herman",
                       "last_name": "Munster",
                       "email": "bossmunster@gmail.com",
-                      "phone_number": "8476577890",
+                      "phone_number": "847-657-7890",
                       "short_bio": "I am a former TV star, transitioning over to the coding world. I am currently attending Actualize Bootcamp in Chicago.",
                       "linkedin_url": "www.linkedinurl.com",
                       "twitter_handle": "bossmunster",
