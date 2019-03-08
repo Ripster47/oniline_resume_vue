@@ -1,5 +1,5 @@
 .left-column{
-  background-color: #d2ddd4
+  background-color: #d2ddd4;
 }
 
 .heading{
@@ -17,6 +17,22 @@
   padding-top: 10%;
 }
 
+<<<<<<< HEAD
+.resumes-index .card {
+  opacity: 0.95;
+  width: ;
+}
+
+.resumes-index .card:hover {
+  box-shadow: 8px 8px 35px 3px lightgrey;
+  opacity: 1;
+}
+
+body{
+  background-image: url('light_wool.png');
+}
+
+=======
 .skills {
   padding-top: 5%;
 }
@@ -24,6 +40,7 @@
 h2.skills {
   padding-bottom: 10%;
 }
+>>>>>>> c962e0fec62f043d60408773a5ac3754e0c74cab
 
 .educations {
   padding-top: %;
