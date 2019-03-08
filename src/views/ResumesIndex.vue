@@ -18,7 +18,7 @@
           <div class="card-deck row">
             <div class="col-md-4" v-for="student in students">
               <div class="card rounded mt-3">
-                <router-link v-bind:to="'/resumes/' + student.id">
+                <router-link v-bind:to="'/developers/' + student.id">
                   <img v-bind:src="student.image_url" v-bind:alt="student.first_name">
                 </router-link>
                 <h5 class="card-title text-center font-weight-bold mt-2"> {{ student.first_name }} {{ student.last_name }}</h5>
