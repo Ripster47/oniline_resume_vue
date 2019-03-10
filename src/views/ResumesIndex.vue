@@ -13,17 +13,23 @@
           </div>
         </div>
         <div class="col-md-8">
-          <h1 class="text-center font-weight-bold"> Meet Our Class </h1>
-
+          <h1 class="text-center"> Meet Our Class </h1>
           <div class="card-deck row">
             <div class="col-md-4" v-for="student in students">
               <div class="card rounded mt-3">
                 <router-link v-bind:to="'/developers/' + student.id">
                   <img v-bind:src="student.image_url" v-bind:alt="student.first_name">
                 </router-link>
-                <h5 class="card-title text-center font-weight-bold mt-2"> {{ student.first_name }} {{ student.last_name }}</h5>
-<!--                 <p class="card-text mb-2"> Capstone {{student.capstone.description}} </p>
- -->              </div>
+                <div>
+                  <h5 class="card-title text-center mt-2"> {{ student.first_name }} {{ student.last_name }}</h5>
+                </div>
+                <router-link v-bind:to="'/developers/' + student.id">
+                  <div class="overlay" v-if="student.capstone">
+                    <p class="card-text text-center mb-2"> {{ student.capstone.name }}  </p>
+                    <p class="text-center">{{  student.capstone.description  }}</p>
+                  </div>
+                </router-link>
+              </div>
             </div>
           </div>
         </div>
@@ -34,6 +40,35 @@
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+.resumes-index {
+  font-family: "Raleway";
+}
+.card {
+  width: 225px;
+  height: 175px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: lightgrey;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+
+
 </style>
 
 <script>
@@ -44,47 +79,12 @@ export default {
           students: [],
           first_name: "",
           last_name: "",
-          email: "",
-          phone_number: "",
-          short_bio: "",
-          linkedin_url: "",
-          twitter_handle: "",
-          personal_blog: "",
-          online_resume_url: "",
-          github_url: "",
           photo: "",
-          experience: [
-                         {
-                           // "student_id: #,
-                            start_date: "",
-                            end_date: "",
-                            job_title: "",
-                            company_name: "",
-                            details: ""
-                         }
-          ],
-          education:[
-                      {
-                        // "student_id: #,
-                        start_date: "",
-                        end_date: "",
-                        degree: "",
-                        university_name: "",
-                        details: ""
-                      }
-          ],
-          skills: [
-                      {
-                        // "student_id: #,
-                        skill: ""
-                      }
-          ],
           capstone:
                       {
                         // "student_id: #,
                         name: "",
                         description: "",
-                        url: ""
                       }
       }
     },
